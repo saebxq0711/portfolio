@@ -52,7 +52,7 @@ const SkillsSection: React.FC = () => {
   }, [])
 
   return (
-    <section id="habilidades" className="py-32 bg-black-primary relative overflow-hidden">
+    <section id="habilidades" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black-primary relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white-primary/20 to-transparent animate-parallax"></div>
@@ -62,62 +62,69 @@ const SkillsSection: React.FC = () => {
         ></div>
       </div>
 
-      <div className="max-w-8xl mx-auto px-8 relative z-10">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Title - Ultra dinámico */}
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 md:mb-20 lg:mb-24">
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <Code2 className="w-8 h-8 text-white-primary animate-spin" style={{ animationDuration: "3s" }} />
-              <span className="text-gray-tertiary font-mono text-xl tracking-wider">SKILLS.ARRAY</span>
-              <Layers className="w-8 h-8 text-white-primary animate-pulse" />
+            <div className="flex items-center justify-center space-x-4 mb-6 md:mb-8">
+              <Code2
+                className="w-6 h-6 md:w-8 md:h-8 text-white-primary animate-spin"
+                style={{ animationDuration: "3s" }}
+              />
+              <span className="text-gray-tertiary font-mono text-base md:text-xl tracking-wider">SKILLS.ARRAY</span>
+              <Layers className="w-6 h-6 md:w-8 md:h-8 text-white-primary animate-pulse" />
             </div>
 
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 md:mb-8 leading-none">
               <span className="text-white-primary">MIS</span>{" "}
-              <span className="gradient-text block lg:inline font-mono">HABILIDADES</span>
+              <span className="gradient-text block sm:inline font-mono">HABILIDADES</span>
             </h2>
 
-            <div className="flex justify-center items-center space-x-6 mb-8">
-              <div className="w-20 h-0.5 bg-white-primary"></div>
-              <Zap className="w-6 h-6 text-white-primary animate-bounce" />
-              <div className="w-20 h-0.5 bg-white-primary"></div>
+            <div className="flex justify-center items-center space-x-4 md:space-x-6 mb-6 md:mb-8">
+              <div className="w-12 md:w-20 h-0.5 bg-white-primary"></div>
+              <Zap className="w-4 h-4 md:w-6 md:h-6 text-white-primary animate-bounce" />
+              <div className="w-12 md:w-20 h-0.5 bg-white-primary"></div>
             </div>
 
-            <p className="text-gray-tertiary text-xl max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-gray-tertiary text-base sm:text-lg md:text-xl max-w-4xl mx-auto leading-relaxed font-light px-4">
               ESTAS SON LAS TECNOLOGÍAS Y HERRAMIENTAS CON LAS QUE TRABAJO PARA CREAR{" "}
               <span className="text-white-primary font-semibold">SOLUCIONES WEB COMPLETAS</span> Y EFICIENTES.
             </p>
           </div>
         </div>
 
-        {/* Skills Grid - Layout masonry */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+        {/* Skills Grid - Layout responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-16 md:mb-20 lg:mb-24">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className={`bg-black-secondary border border-gray-primary/20 p-8 hover-lift hover-glow transition-all duration-700 group ${
+              className={`bg-black-secondary border border-gray-primary/20 p-4 sm:p-6 md:p-8 hover-lift hover-glow transition-all duration-700 group ${
                 isVisible ? "opacity-100 translate-y-0 rotate-0" : "opacity-0 translate-y-10 rotate-3"
               }`}
               style={{
                 transitionDelay: `${index * 100}ms`,
-                height: index % 3 === 0 ? "200px" : index % 2 === 0 ? "180px" : "160px",
+                minHeight: "140px",
               }}
             >
-              <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center space-x-3">
-                  <span className="text-2xl group-hover:animate-bounce">{skill.icon}</span>
-                  <h3 className="text-white-primary font-black text-xl tracking-wide">{skill.name}</h3>
+              <div className="flex items-start justify-between mb-4 md:mb-6">
+                <div className="flex items-center space-x-2 md:space-x-3">
+                  <span className="text-xl md:text-2xl group-hover:animate-bounce">{skill.icon}</span>
+                  <h3 className="text-white-primary font-black text-base sm:text-lg md:text-xl tracking-wide">
+                    {skill.name}
+                  </h3>
                 </div>
-                <span className="text-white-primary font-black text-2xl font-mono">{skill.level}%</span>
+                <span className="text-white-primary font-black text-lg sm:text-xl md:text-2xl font-mono">
+                  {skill.level}%
+                </span>
               </div>
 
               {/* Animated progress bar */}
-              <div className="relative mb-4">
-                <div className="w-full bg-black-tertiary h-3 rounded-full overflow-hidden">
+              <div className="relative mb-3 md:mb-4">
+                <div className="w-full bg-black-tertiary h-2 md:h-3 rounded-full overflow-hidden">
                   <div
-                    className="h-3 bg-white-primary transition-all duration-2000 ease-out rounded-full relative"
+                    className="h-2 md:h-3 bg-white-primary transition-all duration-2000 ease-out rounded-full relative"
                     style={{ width: animatedSkills[index] ? `${skill.level}%` : "0%" }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white-primary/50 to-white-primary animate-pulse"></div>
@@ -126,15 +133,17 @@ const SkillsSection: React.FC = () => {
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-gray-tertiary text-sm font-mono tracking-widest">{skill.category}</span>
-                <div className="w-2 h-2 bg-white-primary rounded-full animate-pulse"></div>
+                <span className="text-gray-tertiary text-xs md:text-sm font-mono tracking-widest">
+                  {skill.category}
+                </span>
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white-primary rounded-full animate-pulse"></div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Skills Categories - Layout hexagonal */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Skills Categories - Layout responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {[
             {
               title: "FRONTEND",
@@ -163,20 +172,24 @@ const SkillsSection: React.FC = () => {
           ].map((category, index) => (
             <div
               key={category.title}
-              className={`bg-black-secondary border border-gray-primary/20 p-8 text-center hover-lift hover-glow transition-all duration-700 group ${
+              className={`bg-black-secondary border border-gray-primary/20 p-4 sm:p-6 md:p-8 text-center hover-lift hover-glow transition-all duration-700 group ${
                 isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
               }`}
               style={{ transitionDelay: `${index * 200 + 1000}ms` }}
             >
-              <div className="text-4xl mb-4 group-hover:animate-bounce">{category.icon}</div>
-              <h3 className="text-xl font-black text-white-primary mb-3 tracking-widest">{category.title}</h3>
-              <p className="text-gray-secondary text-sm mb-6 font-mono">{category.description}</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl mb-3 md:mb-4 group-hover:animate-bounce">
+                {category.icon}
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-black text-white-primary mb-2 md:mb-3 tracking-widest">
+                {category.title}
+              </h3>
+              <p className="text-gray-secondary text-xs sm:text-sm mb-4 md:mb-6 font-mono">{category.description}</p>
 
-              <div className="flex flex-wrap justify-center gap-2">
+              <div className="flex flex-wrap justify-center gap-1 sm:gap-2">
                 {category.techs.map((tech, techIndex) => (
                   <span
                     key={tech}
-                    className={`bg-black-tertiary text-white-primary px-3 py-2 text-xs font-medium tracking-wide border border-gray-primary/20 hover:border-white-primary/40 transition-all duration-300 ${
+                    className={`bg-black-tertiary text-white-primary px-2 sm:px-3 py-1 sm:py-2 text-xs font-medium tracking-wide border border-gray-primary/20 hover:border-white-primary/40 transition-all duration-300 ${
                       animatedSkills[0] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
                     }`}
                     style={{ transitionDelay: `${techIndex * 100 + 1500}ms` }}
@@ -191,12 +204,12 @@ const SkillsSection: React.FC = () => {
 
         {/* Bottom CTA */}
         <div
-          className={`text-center mt-16 transition-all duration-1000 delay-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`text-center mt-12 md:mt-16 transition-all duration-1000 delay-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <div className="inline-flex items-center space-x-4 bg-black-secondary border border-white-primary/20 px-8 py-4 hover-glow">
-            <span className="text-gray-tertiary font-mono">READY_TO_CODE = </span>
-            <span className="text-white-primary font-black">TRUE</span>
-            <div className="w-2 h-2 bg-white-primary rounded-full animate-pulse"></div>
+          <div className="inline-flex items-center space-x-3 md:space-x-4 bg-black-secondary border border-white-primary/20 px-4 sm:px-6 md:px-8 py-3 md:py-4 hover-glow">
+            <span className="text-gray-tertiary font-mono text-sm md:text-base">READY_TO_CODE = </span>
+            <span className="text-white-primary font-black text-sm md:text-base">TRUE</span>
+            <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white-primary rounded-full animate-pulse"></div>
           </div>
         </div>
       </div>

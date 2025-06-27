@@ -1,5 +1,5 @@
 import type React from "react"
-import { Github, Linkedin, Mail, MessageCircle, Code2 } from "lucide-react"
+import { Github, Linkedin, Mail, MessageCircle, Heart, Code2, Coffee } from "lucide-react"
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -18,15 +18,15 @@ const Footer: React.FC = () => {
         ></div>
       </div>
 
-      <div className="max-w-8xl mx-auto px-8 py-20 relative z-10">
-        <div className="grid md:grid-cols-3 gap-16 items-start">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
           {/* Logo & Description - Más elaborado */}
-          <div className="text-center md:text-left space-y-6">
-            <div className="flex items-center justify-center md:justify-start space-x-4 mb-6">
-              <Code2 className="w-10 h-10 text-white-primary animate-pulse" />
-              <div className="text-4xl font-black text-white-primary">
+          <div className="text-center md:text-left space-y-4 md:space-y-6">
+            <div className="flex items-center justify-center md:justify-start space-x-3 md:space-x-4 mb-4 md:mb-6">
+              <Code2 className="w-8 h-8 md:w-10 md:h-10 text-white-primary animate-pulse" />
+              <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white-primary">
                 <span className="text-gray-tertiary">{"<"}</span>
-                <span className="gradient-text font-mono">Juan.Aranda</span>
+                <span className="gradient-text font-mono">JUAN.ARANDA</span>
                 <span className="text-gray-tertiary">{"/>"}</span>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           {/* Social Links - Grid dinámico */}
           <div className="text-center">
             <h3 className="text-white-primary font-black tracking-widest text-lg mb-8">CONECTA CONMIGO</h3>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
               {[
                 {
                   Icon: Github,
@@ -102,7 +102,6 @@ const Footer: React.FC = () => {
                 HABLEMOS
               </a>
 
-              
             </div>
 
             {/* Quick Stats */}
@@ -120,16 +119,15 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section - Más elaborado */}
-        <div className="mt-20 pt-8 border-t border-gray-primary/20">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
+        <div className="mt-12 md:mt-16 lg:mt-20 pt-6 md:pt-8 border-t border-gray-primary/20">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-4">
               <p className="text-gray-tertiary text-sm tracking-wide font-mono">
-                © {currentYear} Juan Aranda - TODOS LOS DERECHOS RESERVADOS
+                © {currentYear} JUAN.ARANDA - TODOS LOS DERECHOS RESERVADOS
               </p>
             </div>
 
-            
 
             {/* Version */}
             <div className="flex items-center space-x-2 text-gray-tertiary font-mono text-xs">

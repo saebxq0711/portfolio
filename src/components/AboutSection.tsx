@@ -26,7 +26,7 @@ const AboutSection: React.FC = () => {
   }, [])
 
   return (
-    <section id="about" className="py-32 bg-black-secondary relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black-secondary relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -38,7 +38,7 @@ const AboutSection: React.FC = () => {
         ></div>
       </div>
 
-      <div className="max-w-8xl mx-auto px-8 relative z-10">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Title - Más dramático */}
         <div className="text-center mb-24">
           <div
@@ -49,7 +49,7 @@ const AboutSection: React.FC = () => {
               <span className="text-gray-tertiary font-mono text-xl tracking-wider">ABOUT_ME.JSON</span>
             </div>
 
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 md:mb-8 leading-none">
               <span className="text-white-primary">SOBRE</span>{" "}
               <span className="gradient-text block lg:inline">MÍ</span>
             </h2>
@@ -63,9 +63,9 @@ const AboutSection: React.FC = () => {
         </div>
 
         {/* Main Content - Layout asimétrico */}
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Profile Image - Posición flotante */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative order-2 lg:order-1">
             <div
               className={`transition-all duration-1500 ${isVisible ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-75 rotate-6"}`}
             >
@@ -98,7 +98,7 @@ const AboutSection: React.FC = () => {
           </div>
 
           {/* Content - Más dinámico */}
-          <div className="lg:col-span-7 space-y-12">
+          <div className="lg:col-span-7 space-y-8 md:space-y-12 order-1 lg:order-2">
             <div
               className={`transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             >
@@ -128,7 +128,7 @@ const AboutSection: React.FC = () => {
 
             {/* Skills Cards - Grid dinámico */}
             <div
-              className={`grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               {[
                 { Icon: Globe, title: "FRONTEND", desc: "React, JavaScript, CSS", color: "border-white-primary/30" },
@@ -148,12 +148,12 @@ const AboutSection: React.FC = () => {
 
             {/* Stats & Info - Layout horizontal */}
             <div
-              className={`grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-gray-primary/20 transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              className={`grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 pt-8 md:pt-12 border-t border-gray-primary/20 transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               {[
-                { Icon: Award, text: "CERTIFICADO", subtext: "Tecnólogo" },
+                { Icon: Award, text: "CERTIFICADO", subtext: "Profesional" },
                 { Icon: Gamepad2, text: "GAMER", subtext: "Estrategia & Lógica" },
-                { Icon: Heart, text: "PASIONATE", subtext: "Code & Design" },
+                { Icon: Heart, text: "PASSIONATE", subtext: "Code & Design" },
               ].map(({ Icon, text, subtext }, index) => (
                 <div key={text} className={`flex flex-col items-center space-y-3 group stagger-${index + 1}`}>
                   <Icon className="w-8 h-8 text-white-primary group-hover:animate-pulse" />

@@ -32,7 +32,7 @@ const Header: React.FC = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-8xl mx-auto px-8 py-8">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 py-6 md:py-8">
         <div className="flex items-center justify-between">
           {/* Logo - Más dinámico */}
           <div className="flex items-center space-x-4 group">
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
               <Code2 className="w-8 h-8 text-white-primary group-hover:animate-spin transition-all duration-500" />
               <div className="absolute inset-0 w-8 h-8 border border-white-primary/20 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-3xl font-black text-white-primary">
+            <div className="text-2xl md:text-3xl font-black text-white-primary">
               <span className="text-gray-tertiary">{"<"}</span>
               <span className="gradient-text font-mono tracking-tighter">JUAN.ARANDA</span>
               <span className="text-gray-tertiary">{"/>"}</span>
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
         {/* Mobile Menu - Rediseñado */}
         {isMenuOpen && (
           <div className="lg:hidden mt-8 pb-8 border-t border-gray-primary/30 animate-fadeInDown">
-            <nav className="flex flex-col space-y-8 mt-8">
+            <nav className="flex flex-col space-y-6 mt-6">
               {[
                 { name: "INICIO", id: "inicio" },
                 { name: "HABILIDADES", id: "habilidades" },
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
                 </button>
               ))}
 
-              <button className="relative bg-transparent text-white-primary px-8 py-4 font-bold tracking-widest w-fit flex items-center hover:text-black-primary border-2 border-white-primary transition-all duration-700 ease-in-out stagger-4 group overflow-hidden">
+              <button className="relative bg-transparent text-white-primary px-6 py-3 font-bold tracking-widest w-full sm:w-fit flex items-center justify-center hover:text-black-primary border-2 border-white-primary transition-all duration-700 ease-in-out stagger-4 group overflow-hidden">
                 <span className="relative z-10 flex items-center">
                   <Download className="w-5 h-5 mr-3" />
                   DESCARGAR CV

@@ -7,16 +7,16 @@ import { ExternalLink, Github, Calendar, Star, Code, Eye } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "TeamTalks",
+    title: "E-COMMERCE PLATFORM",
     description:
-      "Plataforma educativa desarrollada con PHP nativo, con una interfaz de usuario moderna e intuitiva.",
+      "Plataforma de comercio electrónico completa desarrollada con React y Laravel, incluyendo sistema de pagos y gestión de inventario.",
     image: "https://via.placeholder.com/800x600/000000/ffffff?text=E-COMMERCE+PLATFORM",
-    technologies: ["PHP", "MySQL", "Bootstrap"],
+    technologies: ["React", "Laravel", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/tu-usuario/proyecto1",
     liveUrl: "https://tu-proyecto1.com",
     year: "2024",
     featured: true,
-    status: "DEV",
+    status: "LIVE",
     views: "2.5K",
   },
   // {
@@ -33,7 +33,6 @@ const projects = [
   //   status: "BETA",
   //   views: "1.8K",
   // },
-  
 ]
 
 const ProjectsSection: React.FC = () => {
@@ -59,7 +58,7 @@ const ProjectsSection: React.FC = () => {
   }, [])
 
   return (
-    <section id="proyectos" className="py-32 bg-black-secondary relative overflow-hidden">
+    <section id="proyectos" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black-secondary relative overflow-hidden">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 opacity-5">
         <div className="grid grid-cols-8 gap-4 h-full">
@@ -73,7 +72,7 @@ const ProjectsSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-8xl mx-auto px-8 relative z-10">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Title - Más impactante */}
         <div className="text-center mb-24">
           <div
@@ -85,7 +84,7 @@ const ProjectsSection: React.FC = () => {
               <Star className="w-8 h-8 text-white-primary animate-spin" style={{ animationDuration: "4s" }} />
             </div>
 
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 md:mb-8 leading-none">
               <span className="text-white-primary">MIS</span>{" "}
               <span className="gradient-text block lg:inline font-mono">PROYECTOS</span>
             </h2>
@@ -115,15 +114,16 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Projects Masonry Grid */}
-        <div className="grid lg:grid-cols-12 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 mb-12 md:mb-16">
           {projects.map((project, index) => {
             const isLarge = project.featured
             const colSpan = isLarge ? "lg:col-span-8" : "lg:col-span-4"
+            const mdColSpan = "md:col-span-1"
 
             return (
               <div
                 key={project.id}
-                className={`${colSpan} group cursor-pointer ${
+                className={`${mdColSpan} ${colSpan} group cursor-pointer ${
                   isVisible ? "opacity-100 translate-y-0 rotate-0" : "opacity-0 translate-y-10 rotate-1"
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
@@ -137,7 +137,7 @@ const ProjectsSection: React.FC = () => {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       className={`w-full object-cover transition-all duration-700 group-hover:scale-110 ${
-                        isLarge ? "h-80" : "h-64"
+                        isLarge ? "h-48 sm:h-64 md:h-80" : "h-48 sm:h-56 md:h-64"
                       }`}
                     />
 
@@ -197,7 +197,7 @@ const ProjectsSection: React.FC = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="p-8">
+                  <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-black text-white-primary tracking-wide group-hover:gradient-text transition-all duration-300">
                         {project.title}
@@ -226,9 +226,9 @@ const ProjectsSection: React.FC = () => {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex space-x-4">
+                    <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-                        <button className="w-full bg-white-primary text-black-primary py-3 font-bold tracking-wide hover:bg-transparent hover:text-white-primary border-2 border-white-primary transition-all duration-300 flex items-center justify-center group/btn">
+                        <button className="w-full bg-white-primary text-black-primary py-2 sm:py-3 font-bold tracking-wide hover:bg-transparent hover:text-white-primary border-2 border-white-primary transition-all duration-300 flex items-center justify-center group/btn text-sm sm:text-base">
                           <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:animate-bounce" />
                           VER PROYECTO
                         </button>
