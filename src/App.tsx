@@ -6,6 +6,7 @@ import ProjectsSection from "./components/ProjectsSection"
 import Footer from "./components/Footer"
 import "./App.css"
 
+
 function App() {
   return (
     <div className="min-h-screen bg-black-primary text-accent-white font-inter">
