@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useEffect, useState } from "react"
-import { ChevronDown, Code2, Terminal, Zap, Sparkles } from "lucide-react"
+import { ChevronDown, Code2, Zap, Sparkles } from "lucide-react"
 
 const HeroSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
