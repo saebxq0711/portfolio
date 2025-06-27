@@ -10,7 +10,7 @@ const projects = [
     title: "TeamTalks",
     description:
       "Plataforma educativa desarrollada con PHP nativo, con una interfaz de usuario moderna e intuitiva.",
-    image: "https://via.placeholder.com/800x600/000000/ffffff?text=E-COMMERCE+PLATFORM",
+    image: "/img/teamtalks.png",
     technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/tu-usuario/proyecto1",
     liveUrl: "https://tu-proyecto1.com",
