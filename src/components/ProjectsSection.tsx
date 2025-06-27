@@ -7,16 +7,16 @@ import { ExternalLink, Github, Calendar, Star, Code, Eye } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "E-COMMERCE PLATFORM",
+    title: "TeamTalks",
     description:
-      "Plataforma de comercio electrónico completa desarrollada con React y Laravel, incluyendo sistema de pagos y gestión de inventario.",
+      "Plataforma educativa desarrollada con PHP nativo, con una interfaz de usuario moderna e intuitiva.",
     image: "https://via.placeholder.com/800x600/000000/ffffff?text=E-COMMERCE+PLATFORM",
     technologies: ["React", "Laravel", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/tu-usuario/proyecto1",
     liveUrl: "https://tu-proyecto1.com",
     year: "2024",
     featured: true,
-    status: "LIVE",
+    status: "DEV",
     views: "2.5K",
   },
   // {

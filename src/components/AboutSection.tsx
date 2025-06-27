@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
                 <div className="relative w-full max-w-md mx-auto">
                   <img
                     src="https://via.placeholder.com/500x600/000000/ffffff?text=TU+FOTO"
-                    alt="Tu foto de perfil"
+                    alt="Quien Soy"
                     className="w-full h-auto object-cover border-4 border-white-primary shadow-2xl hover-tilt transition-all duration-700"
                   />
 
