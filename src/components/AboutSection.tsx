@@ -218,13 +218,13 @@ const AboutSection: React.FC = () => {
               }`}
             >
               {[
-                { Icon: Award, text: "CERTIFICADO", subtext: "Profesional" },
+                { Icon: Award, text: "CERTIFICADO", subtext: "Tecnólogo" },
                 {
                   Icon: Gamepad2,
                   text: "GAMER",
                   subtext: "Estrategia & Lógica",
                 },
-                { Icon: Heart, text: "PASSIONATE", subtext: "Code & Design" },
+                { Icon: Heart, text: "APASIONADO", subtext: "Código & Diseño" },
               ].map(({ Icon, text, subtext }, index) => (
                 <div
                   key={text}
