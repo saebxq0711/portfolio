@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             </div>
             <div className="text-3xl font-black text-white-primary">
               <span className="text-gray-tertiary">{"<"}</span>
-              <span className="gradient-text font-mono tracking-tighter">TU.NOMBRE</span>
+              <span className="gradient-text font-mono tracking-tighter">JUAN.ARANDA</span>
               <span className="text-gray-tertiary">{"/>"}</span>
             </div>
           </div>

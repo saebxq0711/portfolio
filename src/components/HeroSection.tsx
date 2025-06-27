@@ -26,7 +26,6 @@ const HeroSection: React.FC = () => {
     return () => clearInterval(typingInterval)
   }, [])
 
-
   return (
     <section
       id="inicio"
@@ -71,7 +70,6 @@ const HeroSection: React.FC = () => {
             <div
               className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              
               <br />
               <br />
               <br />
@@ -104,7 +102,7 @@ const HeroSection: React.FC = () => {
             >
               <button
                 onClick={() => document.getElementById("proyectos")?.scrollIntoView({ behavior: "smooth" })}
-                className="group relative bg-white-primary text-black-primary px-12 py-6 font-black tracking-widest text-lg transition-all duration-500 hover:bg-transparent hover:text-white-primary border-2 border-white-primary hover-lift overflow-hidden min-w-[280px]"
+                className="group relative bg-white-primary text-black-primary px-12 py-6 font-black tracking-widest text-lg transition-all duration-500 hover:bg-transparent hover:text-black-primary border-2 border-white-primary hover-lift overflow-hidden min-w-[280px]"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   <Zap className="w-6 h-6 mr-3 group-hover:animate-bounce" />
@@ -171,7 +169,7 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </section>
   )
