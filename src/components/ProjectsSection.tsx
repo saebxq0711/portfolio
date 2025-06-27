@@ -13,7 +13,7 @@ const projects = [
     image: "/img/teamtalks.png",
     technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/EdierMoyano/TeamTalks_Beta.git",
-    liveUrl: "https://tu-proyecto1.com",
+    liveUrl: "teamtalks.com.co/",
     year: "2025",
     featured: true,
     status: "DEV",
