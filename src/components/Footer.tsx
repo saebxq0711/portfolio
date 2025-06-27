@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
 
             <div className="space-y-4">
               <a
-                href="mailto:tu-email@ejemplo.com"
+                href="mailto:jsebasaranda2007@hotmail.com"
                 className="block text-2xl font-black text-white-primary hover:gradient-text transition-all duration-300 hover-lift"
               >
                 HABLEMOS
