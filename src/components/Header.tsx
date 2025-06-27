@@ -1,28 +1,37 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState, useEffect } from "react"
-import { Download, Menu, X, Github, Linkedin, Mail, MessageCircle, Code2 } from "lucide-react"
+import type React from "react";
+import { useState, useEffect } from "react";
+import {
+  Download,
+  Menu,
+  X,
+  Github,
+  Linkedin,
+  Mail,
+  MessageCircle,
+  Code2,
+} from "lucide-react";
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header
@@ -42,7 +51,9 @@ const Header: React.FC = () => {
             </div>
             <div className="text-2xl md:text-3xl font-black text-white-primary">
               <span className="text-gray-tertiary">{"<"}</span>
-              <span className="gradient-text font-mono tracking-tighter">JUAN.ARANDA</span>
+              <span className="gradient-text font-mono tracking-tighter">
+                JUAN.ARANDA
+              </span>
               <span className="text-gray-tertiary">{"/>"}</span>
             </div>
           </div>
@@ -57,7 +68,9 @@ const Header: React.FC = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative text-gray-tertiary hover:text-white-primary transition-all duration-500 font-medium tracking-widest text-sm border-animate group stagger-${index + 1}`}
+                className={`relative text-gray-tertiary hover:text-white-primary transition-all duration-500 font-medium tracking-widest text-sm border-animate group stagger-${
+                  index + 1
+                }`}
               >
                 <span className="relative z-10">{item.name}</span>
                 <div className="absolute -bottom-2 left-0 w-0 h-0.5 bg-white-primary transition-all duration-500 group-hover:w-full"></div>
@@ -65,13 +78,21 @@ const Header: React.FC = () => {
             ))}
 
             {/* CV Button - Más llamativo */}
-            <button className="relative bg-transparent text-white-primary px-8 py-4 font-bold tracking-widest text-sm transition-all duration-700 hover:text-black-primary border-2 border-white-primary hover-lift group overflow-hidden">
-              <span className="relative z-10 flex items-center">
-                <Download className="w-5 h-5 mr-3 group-hover:animate-bounce" />
-                DESCARGAR CV
-              </span>
-              <div className="absolute inset-0 bg-white-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out origin-left"></div>
-            </button>
+            <a
+              href="/cv/Hoja_de_vida_Juan_Aranda.pdf"
+              download
+              className="inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="relative bg-transparent text-white-primary px-8 py-4 font-bold tracking-widest text-sm transition-all duration-700 hover:text-black-primary border-2 border-white-primary hover-lift group overflow-hidden">
+                <span className="relative z-10 flex items-center">
+                  <Download className="w-5 h-5 mr-3 group-hover:animate-bounce" />
+                  DESCARGAR CV
+                </span>
+                <div className="absolute inset-0 bg-white-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out origin-left"></div>
+              </button>
+            </a>
 
             {/* Social Icons - Flotantes */}
             <div className="flex items-center space-x-6">
@@ -86,7 +107,9 @@ const Header: React.FC = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 hover-lift hover-glow floating stagger-${index + 1}`}
+                  className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 hover-lift hover-glow floating stagger-${
+                    index + 1
+                  }`}
                   style={{ animationDelay: `${index * 0.5}s` }}
                 >
                   <Icon className="w-6 h-6" />
@@ -101,7 +124,11 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <div className="relative w-8 h-8">
-              {isMenuOpen ? <X className="w-8 h-8 animate-rotateIn" /> : <Menu className="w-8 h-8 animate-scaleIn" />}
+              {isMenuOpen ? (
+                <X className="w-8 h-8 animate-rotateIn" />
+              ) : (
+                <Menu className="w-8 h-8 animate-scaleIn" />
+              )}
             </div>
           </button>
         </div>
@@ -118,7 +145,9 @@ const Header: React.FC = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 text-left font-medium tracking-widest border-animate stagger-${index + 1}`}
+                  className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 text-left font-medium tracking-widest border-animate stagger-${
+                    index + 1
+                  }`}
                 >
                   {item.name}
                 </button>
@@ -135,7 +164,10 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-8 pt-6">
                 {[
                   { Icon: Github, href: "https://github.com/saebxq0711" },
-                  { Icon: Linkedin, href: "www.linkedin.com/in/sebastian-aranda-26448535b" },
+                  {
+                    Icon: Linkedin,
+                    href: "www.linkedin.com/in/sebastian-aranda-26448535b",
+                  },
                   { Icon: MessageCircle, href: "https://wa.me/3187523586" },
                   { Icon: Mail, href: "mailto:jsebasaranda2007@hotmail.com" },
                 ].map(({ Icon, href }, index) => (
@@ -144,7 +176,9 @@ const Header: React.FC = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 hover-lift stagger-${index + 5}`}
+                    className={`text-gray-tertiary hover:text-white-primary transition-all duration-500 hover-lift stagger-${
+                      index + 5
+                    }`}
                   >
                     <Icon className="w-6 h-6" />
                   </a>
@@ -155,7 +189,7 @@ const Header: React.FC = () => {
         )}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
