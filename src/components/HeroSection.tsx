@@ -26,12 +26,6 @@ const HeroSection: React.FC = () => {
     return () => clearInterval(typingInterval)
   }, [])
 
-  const scrollToAbout = () => {
-    const element = document.getElementById("about")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
 
   return (
     <section

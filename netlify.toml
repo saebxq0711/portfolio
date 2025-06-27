@@ -2,3 +2,7 @@
 from = "/*"
 to = "/public/index.html"
 status = 200
+
+
+[build.environment]
+  CI = "false"
