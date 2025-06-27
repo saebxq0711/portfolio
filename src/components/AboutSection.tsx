@@ -190,7 +190,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Database,
                   title: "DATABASE",
-                  desc: "MySQL, SQL",
+                  desc: "MySQL",
                   color: "border-white-primary/10",
                 },
               ].map(({ Icon, title, desc, color }, index) => (

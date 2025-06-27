@@ -7,35 +7,35 @@ import { Code2, Layers, Zap } from "lucide-react"
 const skills = [
   {
     name: "HTML",
-    level: 95,
+    level: 90,
     category: "Frontend",
     icon: "fab fa-html5",
     color: "text-orange-500",
   },
   {
     name: "CSS",
-    level: 90,
+    level: 85,
     category: "Frontend",
     icon: "fab fa-css3-alt",
     color: "text-blue-500",
   },
   {
     name: "JavaScript",
-    level: 88,
+    level: 70,
     category: "Frontend",
     icon: "fab fa-js-square",
     color: "text-yellow-400",
   },
   {
     name: "React.js",
-    level: 85,
+    level: 70,
     category: "Frontend",
     icon: "fab fa-react",
     color: "text-cyan-400",
   },
   {
     name: "PHP",
-    level: 82,
+    level: 95,
     category: "Backend",
     icon: "fab fa-php",
     color: "text-purple-400",
@@ -56,14 +56,14 @@ const skills = [
   },
   {
     name: "MySQL",
-    level: 85,
+    level: 90,
     category: "Database",
     icon: "fas fa-database",
     color: "text-blue-600",
   },
   {
     name: "Git/GitHub",
-    level: 88,
+    level: 95,
     category: "Tools",
     icon: "fab fa-github",
     color: "text-gray-400",
@@ -81,13 +81,6 @@ const skills = [
     category: "Tools",
     icon: "fas fa-code",
     color: "text-blue-400",
-  },
-  {
-    name: "SQL",
-    level: 83,
-    category: "Database",
-    icon: "fas fa-database",
-    color: "text-green-500",
   },
 ]
 
@@ -235,7 +228,7 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: "DATABASE",
-              techs: ["MySQL", "SQL"],
+              techs: ["MySQL"],
               icon: "fas fa-database",
               color: "text-purple-400",
               description: "Gestión de datos",
