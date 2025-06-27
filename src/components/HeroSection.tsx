@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useEffect, useState } from "react"
-import { ChevronDown, Code2, Zap, Sparkles } from "lucide-react"
+import { Code2, Zap, Sparkles } from "lucide-react"
 
 const HeroSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -153,7 +153,7 @@ const HeroSection: React.FC = () => {
                   <div className="text-center space-y-6">
                     <Code2 className="w-24 h-24 mx-auto text-white-primary animate-glow" />
                     <div className="space-y-2">
-                      <div className="text-4xl font-black text-white-primary">3+</div>
+                      <div className="text-4xl font-black text-white-primary">1+</div>
                       <div className="text-gray-tertiary font-mono text-sm tracking-widest">AÑOS</div>
                     </div>
                   </div>
@@ -161,12 +161,12 @@ const HeroSection: React.FC = () => {
 
                 {/* Floating stats */}
                 <div className="absolute -top-8 -left-8 bg-black-secondary border border-white-primary/20 p-4 floating">
-                  <div className="text-2xl font-black text-white-primary">50+</div>
+                  <div className="text-2xl font-black text-white-primary">5+</div>
                   <div className="text-gray-tertiary text-xs font-mono">PROYECTOS</div>
                 </div>
 
                 <div className="absolute -bottom-8 -right-8 bg-black-secondary border border-white-primary/20 p-4 floating-delayed">
-                  <div className="text-2xl font-black text-white-primary">12+</div>
+                  <div className="text-2xl font-black text-white-primary">10+</div>
                   <div className="text-gray-tertiary text-xs font-mono">TECNOLOGÍAS</div>
                 </div>
 
@@ -177,21 +177,7 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll Indicator - Rediseñado */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-          <button
-            onClick={scrollToAbout}
-            className="group flex flex-col items-center space-y-2 text-gray-tertiary hover:text-white-primary transition-all duration-500 hover-lift"
-          >
-            <span className="text-xs font-mono tracking-widest">SCROLL</span>
-            <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-current rounded-full mt-2 animate-bounce"></div>
-            </div>
-            <ChevronDown className="w-5 h-5 animate-bounce" />
-          </button>
-        </div>
+        </div>        
       </div>
     </section>
   )

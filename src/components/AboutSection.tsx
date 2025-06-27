@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useEffect, useState } from "react"
-import { Code, Database, Globe, Award, Coffee, User, Briefcase, Heart } from "lucide-react"
+import { Code, Database, Globe, Award, Gamepad2, User, Briefcase, Heart } from "lucide-react"
 
 const AboutSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -151,9 +151,9 @@ const AboutSection: React.FC = () => {
               className={`grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-gray-primary/20 transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               {[
-                { Icon: Award, text: "CERTIFICADO", subtext: "Profesional" },
-                { Icon: Coffee, text: "CAFÉ LOVER", subtext: "24/7 Activo" },
-                { Icon: Heart, text: "PASSIONATE", subtext: "Code & Design" },
+                { Icon: Award, text: "CERTIFICADO", subtext: "Tecnólogo" },
+                { Icon: Gamepad2, text: "GAMER", subtext: "Estrategia & Lógica" },
+                { Icon: Heart, text: "PASIONATE", subtext: "Code & Design" },
               ].map(({ Icon, text, subtext }, index) => (
                 <div key={text} className={`flex flex-col items-center space-y-3 group stagger-${index + 1}`}>
                   <Icon className="w-8 h-8 text-white-primary group-hover:animate-pulse" />

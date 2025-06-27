@@ -1,5 +1,5 @@
 import type React from "react"
-import { Github, Linkedin, Mail, MessageCircle, Heart, Code2, Coffee } from "lucide-react"
+import { Github, Linkedin, Mail, MessageCircle, Heart, Code2 } from "lucide-react"
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               <Code2 className="w-10 h-10 text-white-primary animate-pulse" />
               <div className="text-4xl font-black text-white-primary">
                 <span className="text-gray-tertiary">{"<"}</span>
-                <span className="gradient-text font-mono">TU.NOMBRE</span>
+                <span className="gradient-text font-mono">Juan.Aranda</span>
                 <span className="text-gray-tertiary">{"/>"}</span>
               </div>
             </div>
@@ -102,20 +102,17 @@ const Footer: React.FC = () => {
                 HABLEMOS
               </a>
 
-              <div className="text-gray-tertiary font-mono text-sm">
-                <p>RESPUESTA EN &lt; 24H</p>
-                <p>CONSULTA GRATUITA</p>
-              </div>
+              
             </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-primary/20">
               <div className="text-center">
-                <div className="text-2xl font-black text-white-primary">3+</div>
+                <div className="text-2xl font-black text-white-primary">1+</div>
                 <div className="text-gray-tertiary text-xs font-mono">AÑOS EXP</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-black text-white-primary">50+</div>
+                <div className="text-2xl font-black text-white-primary">5+</div>
                 <div className="text-gray-tertiary text-xs font-mono">PROYECTOS</div>
               </div>
             </div>
@@ -128,23 +125,16 @@ const Footer: React.FC = () => {
             {/* Copyright */}
             <div className="flex items-center space-x-4">
               <p className="text-gray-tertiary text-sm tracking-wide font-mono">
-                © {currentYear} TU.NOMBRE - TODOS LOS DERECHOS RESERVADOS
+                © {currentYear} Juan Aranda - TODOS LOS DERECHOS RESERVADOS
               </p>
             </div>
 
-            {/* Made with love */}
-            <div className="flex items-center space-x-3 text-gray-tertiary text-sm">
-              <span className="font-mono">HECHO CON</span>
-              <Heart className="w-5 h-5 text-white-primary animate-pulse" />
-              <span className="font-mono">Y MUCHO</span>
-              <Coffee className="w-5 h-5 text-white-primary animate-bounce" />
-              <span className="font-mono">EN MÉXICO</span>
-            </div>
+            
 
             {/* Version */}
             <div className="flex items-center space-x-2 text-gray-tertiary font-mono text-xs">
               <span>VERSION</span>
-              <span className="text-white-primary font-bold">2.0.1</span>
+              <span className="text-white-primary font-bold">2.0</span>
               <div className="w-2 h-2 bg-white-primary rounded-full animate-pulse"></div>
             </div>
           </div>

@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             </div>
             <div className="text-3xl font-black text-white-primary">
               <span className="text-gray-tertiary">{"<"}</span>
-              <span className="gradient-text font-mono tracking-tighter">Juan.Aranda</span>
+              <span className="gradient-text font-mono tracking-tighter">TU.NOMBRE</span>
               <span className="text-gray-tertiary">{"/>"}</span>
             </div>
           </div>
@@ -65,12 +65,12 @@ const Header: React.FC = () => {
             ))}
 
             {/* CV Button - Más llamativo */}
-            <button className="relative bg-white-primary text-black-primary px-8 py-4 font-bold tracking-widest text-sm transition-all duration-500 hover:bg-transparent hover:text-white-primary border-2 border-white-primary hover-lift group overflow-hidden">
+            <button className="relative bg-transparent text-white-primary px-8 py-4 font-bold tracking-widest text-sm transition-all duration-700 hover:text-black-primary border-2 border-white-primary hover-lift group overflow-hidden">
               <span className="relative z-10 flex items-center">
                 <Download className="w-5 h-5 mr-3 group-hover:animate-bounce" />
                 DESCARGAR CV
               </span>
-              <div className="absolute inset-0 bg-white-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              <div className="absolute inset-0 bg-white-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out origin-left"></div>
             </button>
 
             {/* Social Icons - Flotantes */}
@@ -124,9 +124,12 @@ const Header: React.FC = () => {
                 </button>
               ))}
 
-              <button className="bg-white-primary text-black-primary px-8 py-4 font-bold tracking-widest w-fit flex items-center hover:bg-transparent hover:text-white-primary border-2 border-white-primary transition-all duration-500 stagger-4">
-                <Download className="w-5 h-5 mr-3" />
-                DESCARGAR CV
+              <button className="relative bg-transparent text-white-primary px-8 py-4 font-bold tracking-widest w-fit flex items-center hover:text-black-primary border-2 border-white-primary transition-all duration-700 ease-in-out stagger-4 group overflow-hidden">
+                <span className="relative z-10 flex items-center">
+                  <Download className="w-5 h-5 mr-3" />
+                  DESCARGAR CV
+                </span>
+                <div className="absolute inset-0 bg-white-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-in-out origin-left"></div>
               </button>
 
               <div className="flex items-center space-x-8 pt-6">
