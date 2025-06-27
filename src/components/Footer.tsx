@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
                 },
                 {
                   Icon: Linkedin,
-                  href: "www.linkedin.com/in/sebastian-aranda-26448535b",
+                  href: "https://www.linkedin.com/in/sebastian-aranda-26448535b",
                   label: "LINKEDIN",
                   color: "hover:bg-white-primary hover:text-black-primary",
                 },

@@ -98,7 +98,7 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-6">
               {[
                 { Icon: Github, href: "https://github.com/saebxq0711" },
-                { Icon: Linkedin, href: "www.linkedin.com/in/sebastian-aranda-26448535b" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/in/sebastian-aranda-26448535b" },
                 { Icon: MessageCircle, href: "https://wa.me/3187523586" },
                 { Icon: Mail, href: "mailto:jsebasaranda2007@hotmail.com" },
               ].map(({ Icon, href }, index) => (
@@ -166,7 +166,7 @@ const Header: React.FC = () => {
                   { Icon: Github, href: "https://github.com/saebxq0711" },
                   {
                     Icon: Linkedin,
-                    href: "www.linkedin.com/in/sebastian-aranda-26448535b",
+                    href: "https://www.linkedin.com/in/sebastian-aranda-26448535b",
                   },
                   { Icon: MessageCircle, href: "https://wa.me/3187523586" },
                   { Icon: Mail, href: "mailto:jsebasaranda2007@hotmail.com" },
