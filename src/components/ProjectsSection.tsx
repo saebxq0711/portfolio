@@ -251,7 +251,7 @@ const ProjectsSection: React.FC = () => {
           className={`text-center transition-all duration-1000 delay-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <div className="inline-block">
-            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/saebxq0711" target="_blank" rel="noopener noreferrer">
               <button className="group relative bg-black-tertiary border-2 border-white-primary text-white-primary hover:bg-white-primary hover:text-black-primary px-12 py-6 font-black tracking-widest text-lg transition-all duration-500 hover-lift overflow-hidden">
                 <span className="relative z-10 flex items-center">
                   <Github className="w-6 h-6 mr-4 group-hover:animate-spin" />

@@ -1,5 +1,5 @@
 import type React from "react"
-import { Github, Linkedin, Mail, MessageCircle, Heart, Code2, Coffee } from "lucide-react"
+import { Github, Linkedin, Mail, MessageCircle, Code2} from "lucide-react"
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -52,25 +52,25 @@ const Footer: React.FC = () => {
               {[
                 {
                   Icon: Github,
-                  href: "https://github.com/tu-usuario",
+                  href: "https://github.com/saebxq0711",
                   label: "GITHUB",
                   color: "hover:bg-white-primary hover:text-black-primary",
                 },
                 {
                   Icon: Linkedin,
-                  href: "https://linkedin.com/in/tu-perfil",
+                  href: "www.linkedin.com/in/sebastian-aranda-26448535b",
                   label: "LINKEDIN",
                   color: "hover:bg-white-primary hover:text-black-primary",
                 },
                 {
                   Icon: MessageCircle,
-                  href: "https://wa.me/tu-numero",
+                  href: "https://wa.me/3187523586",
                   label: "WHATSAPP",
                   color: "hover:bg-white-primary hover:text-black-primary",
                 },
                 {
                   Icon: Mail,
-                  href: "mailto:tu-email@ejemplo.com",
+                  href: "mailto:jsebasaranda2007@hotmail.com",
                   label: "EMAIL",
                   color: "hover:bg-white-primary hover:text-black-primary",
                 },

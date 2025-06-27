@@ -97,10 +97,10 @@ const Header: React.FC = () => {
             {/* Social Icons - Flotantes */}
             <div className="flex items-center space-x-6">
               {[
-                { Icon: Github, href: "https://github.com/tu-usuario" },
-                { Icon: Linkedin, href: "https://linkedin.com/in/tu-perfil" },
-                { Icon: MessageCircle, href: "https://wa.me/tu-numero" },
-                { Icon: Mail, href: "mailto:tu-email@ejemplo.com" },
+                { Icon: Github, href: "https://github.com/saebxq0711" },
+                { Icon: Linkedin, href: "www.linkedin.com/in/sebastian-aranda-26448535b" },
+                { Icon: MessageCircle, href: "https://wa.me/3187523586" },
+                { Icon: Mail, href: "mailto:jsebasaranda2007@hotmail.com" },
               ].map(({ Icon, href }, index) => (
                 <a
                   key={href}
