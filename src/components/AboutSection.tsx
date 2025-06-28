@@ -178,7 +178,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Globe,
                   title: "FRONTEND",
-                  desc: "React, JavaScript, CSS",
+                  desc: "HTML, CSS, JavaScript, React.js",
                   color: "border-white-primary/30",
                 },
                 {
