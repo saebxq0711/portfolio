@@ -218,7 +218,7 @@ const AboutSection: React.FC = () => {
               }`}
             >
               {[
-                { Icon: Award, text: "CERTIFICADO", subtext: "Tecnólogo" },
+                { Icon: Award, text: "POR CERTIFICAR", subtext: "Tecnólogo" },
                 {
                   Icon: Gamepad2,
                   text: "GAMER",
