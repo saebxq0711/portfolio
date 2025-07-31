@@ -62,6 +62,7 @@ const Header: React.FC = () => {
           <nav className="hidden lg:flex items-center space-x-16">
             {[
               { name: "INICIO", id: "inicio" },
+              { name: "SOBRE MI", id: "about" },
               { name: "HABILIDADES", id: "habilidades" },
               { name: "PROYECTOS", id: "proyectos" },
             ].map((item, index) => (
@@ -139,6 +140,7 @@ const Header: React.FC = () => {
             <nav className="flex flex-col space-y-6 mt-6">
               {[
                 { name: "INICIO", id: "inicio" },
+                { name: "SOBRE MI", id: "about" },
                 { name: "HABILIDADES", id: "habilidades" },
                 { name: "PROYECTOS", id: "proyectos" },
               ].map((item, index) => (
