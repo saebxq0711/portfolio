@@ -84,7 +84,7 @@ const projects = [
     id: 5,
     title: "Django",
     description:
-      "Plataforma educativa desarrollada con PHP nativo, con una interfaz de usuario moderna e intuitiva.",
+      "Sitio web simple creado con Django, con sistema de autenticación incluido (inicio y registro). Ideal como base para futuros desarrollos más complejos con este framework.",
     image: "/img/django.png",
     technologies: ["React.js", "JavaScript", "Bootstrap"],
     githubUrl: "https://github.com/saebxq0711/django.git",
