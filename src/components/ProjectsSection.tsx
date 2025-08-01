@@ -26,7 +26,7 @@ const projects = [
       "MySQL",
       "Bootstrap",
       "Tailwindcss",
-      "JS",
+      "JavaScript",
       "Livewire",
     ],
     githubUrl: "https://github.com/saebxq0711/Psicocare.git",
