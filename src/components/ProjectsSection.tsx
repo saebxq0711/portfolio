@@ -37,7 +37,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Apis",
+    title: "APIS",
     description:
       "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React y backend en Python.",
     image: "/img/apis.png",
