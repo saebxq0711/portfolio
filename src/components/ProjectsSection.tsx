@@ -86,7 +86,7 @@ const projects = [
     description:
       "Sitio web simple creado con Django, con sistema de autenticación incluido (inicio y registro). Ideal como base para futuros desarrollos más complejos con este framework.",
     image: "/img/django.png",
-    technologies: ["React.js", "JavaScript", "Bootstrap"],
+    technologies: ["Python", "Django", "Bootstrap"],
     githubUrl: "https://github.com/saebxq0711/django.git",
     liveUrl: "#",
     year: "2025",
