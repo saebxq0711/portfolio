@@ -256,7 +256,7 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: "BACKEND",
-              techs: ["PHP", "Python", "Laravel"],
+              techs: ["PHP", "Python", "Laravel", "APIs REST"],
               icon: "fas fa-server",
               color: "text-green-400",
               description: "Lógica del servidor",

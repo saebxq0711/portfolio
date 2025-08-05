@@ -184,7 +184,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Code,
                   title: "BACKEND",
-                  desc: "PHP, Python, Laravel",
+                  desc: "PHP, Python, Laravel, APIs REST",
                   color: "border-white-primary/20",
                 },
                 {

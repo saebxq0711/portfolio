@@ -18,7 +18,7 @@ const projects = [
     id: 1,
     title: "Psicocare",
     description:
-      "Sistema web para la gestión psicológica, desarrollado inicialmente en PHP nativo. Permite el registro de pacientes, agendamiento de citas, control de sesiones, mensajería privada y chatbot de salud mental. Interfaz moderna con Bootstrap y Tailwind.",
+      "Sistema web para la gestión psicológica. Permite el registro de pacientes, agendamiento de citas, control de sesiones, mensajería privada y chatbot de salud mental.",
     image: "/img/Psicocare.png",
     technologies: [
       "PHP",
@@ -37,9 +37,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "APIS",
+    title: "APIs",
     description:
-      "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React y backend en Python.",
+      "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React.",
     image: "/img/apis.png",
     technologies: ["React.js", "Vite", "JavaScript", "API"],
     githubUrl: "https://github.com/saebxq0711/APIs.git",
