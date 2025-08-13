@@ -178,7 +178,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Globe,
                   title: "FRONTEND",
-                  desc: "HTML, CSS, JavaScript, React.js",
+                  desc: "HTML, CSS, JavaScript, React.js, TailwindCSS, Bootstrap",
                   color: "border-white-primary/30",
                 },
                 {
@@ -190,7 +190,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Database,
                   title: "DATABASE",
-                  desc: "MySQL",
+                  desc: "SQL, MySQL",
                   color: "border-white-primary/10",
                 },
               ].map(({ Icon, title, desc, color }, index) => (

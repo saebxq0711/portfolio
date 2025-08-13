@@ -249,7 +249,7 @@ const SkillsSection: React.FC = () => {
           {[
             {
               title: "FRONTEND",
-              techs: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap"],
+              techs: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCSS", "Bootstrap"],
               icon: "fas fa-palette",
               color: "text-blue-400",
               description: "Interfaces modernas",
@@ -263,7 +263,7 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: "DATABASE",
-              techs: ["MySQL"],
+              techs: ["SQL", "MySQL"],
               icon: "fas fa-database",
               color: "text-purple-400",
               description: "Gestión de datos",
