@@ -16,6 +16,32 @@ import {
 const projects = [
   {
     id: 1,
+    title: "Codive - Landing Page",
+    description:
+      "Landing page corporativa para Codive, una empresa de desarrollo de software a medida, creación de sitios web responsivos y soluciones tecnológicas innovadoras.",
+    image: "/img/Codive.png",
+    technologies: ["Next.js", "React", "TailwindCSS", "JavaScript"],
+    githubUrl: "https://github.com/saebxq0711/Codive.git", // si el repo es este, cámbialo
+    liveUrl: "https://codive-dev.vercel.app", // aquí tu link en vercel
+    year: "2025",
+    featured: true,
+    status: "PROD",
+  },
+  {
+    id: 3,
+    title: "APIs",
+    description:
+      "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React.",
+    image: "/img/apis.png",
+    technologies: ["React.js", "Vite", "JavaScript", "API"],
+    githubUrl: "https://github.com/saebxq0711/APIs.git",
+    liveUrl: "#",
+    year: "2025",
+    featured: false,
+    status: "PROD",
+  },
+  {
+    id: 2,
     title: "Psicocare",
     description:
       "Sistema web para la gestión psicológica. Permite el registro de pacientes, agendamiento de citas, control de sesiones, mensajería privada y chatbot de salud mental.",
@@ -36,20 +62,20 @@ const projects = [
     status: "DEV",
   },
   {
-    id: 2,
-    title: "APIs",
+    id: 5,
+    title: "Dragon Ball",
     description:
-      "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React.",
-    image: "/img/apis.png",
-    technologies: ["React.js", "Vite", "JavaScript", "API"],
-    githubUrl: "https://github.com/saebxq0711/APIs.git",
+      "Sitio visual basado en Dragon Ball, desarrollado con React. Incluye una página de inicio, personajes principales y una sección con la historia del anime. Proyecto estático enfocado en diseño y experiencia de usuario.",
+    image: "/img/dragon.png",
+    technologies: ["React.js", "JavaScript", "Bootstrap"],
+    githubUrl: "https://github.com/saebxq0711/dragon_ball.git",
     liveUrl: "#",
     year: "2025",
     featured: false,
     status: "PROD",
   },
   {
-    id: 3,
+    id: 4,
     title: "TeamTalks",
     description:
       "Plataforma educativa colaborativa desarrollada en PHP y MySQL. Facilita la interacción entre aprendices e instructores, con módulos de contenido, foros y evaluaciones. Diseño intuitivo y funcional.",
@@ -67,21 +93,9 @@ const projects = [
     featured: true,
     status: "BETA",
   },
+
   {
-    id: 4,
-    title: "Dragon Ball",
-    description:
-      "Sitio visual basado en Dragon Ball, desarrollado con React. Incluye una página de inicio, personajes principales y una sección con la historia del anime. Proyecto estático enfocado en diseño y experiencia de usuario.",
-    image: "/img/dragon.png",
-    technologies: ["React.js", "JavaScript", "Bootstrap"],
-    githubUrl: "https://github.com/saebxq0711/dragon_ball.git",
-    liveUrl: "#",
-    year: "2025",
-    featured: false,
-    status: "PROD",
-  },
-  {
-    id: 5,
+    id: 6,
     title: "Django",
     description:
       "Sitio web simple creado con Django, con sistema de autenticación incluido (inicio y registro). Ideal como base para futuros desarrollos más complejos con este framework.",
