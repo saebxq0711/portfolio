@@ -19,7 +19,7 @@ const projects = [
     title: "FulgorBurger",
     description:
       "Versión BETA de la plataforma web FulgorBurger, un sistema de pedidos en línea para un restaurante de comida rápida especializado en hamburguesas artesanales. Actualmente permite explorar el menú y realizar pedidos básicos, con futuras implementaciones de sistema de pagos en línea para completar la experiencia del usuario.",
-    image: "/img/fulgor.jpg",
+    image: "/img/fulgor.png",
     technologies: ["Next.js", "TypeScript", "TailwindCSS"],
     githubUrl: "https://github.com/saebxq0711/fulgorburger.git", // si el repo es este, cámbialo
     liveUrl: "https://fulgorburger.vercel.app", // aquí tu link en vercel
