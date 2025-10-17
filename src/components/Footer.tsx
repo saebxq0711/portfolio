@@ -121,13 +121,6 @@ const Footer: React.FC = () => {
         {/* Bottom Section - Más elaborado */}
         <div className="mt-12 md:mt-16 lg:mt-20 pt-6 md:pt-8 border-t border-gray-primary/20">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            {/* Copyright */}
-            <div className="flex items-center space-x-4">
-              <p className="text-gray-tertiary text-sm tracking-wide font-mono">
-                © {currentYear} JUAN.ARANDA - TODOS LOS DERECHOS RESERVADOS
-              </p>
-            </div>
-
 
             {/* Version */}
             <div className="flex items-center space-x-2 text-gray-tertiary font-mono text-xs">

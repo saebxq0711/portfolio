@@ -16,19 +16,20 @@ import {
 const projects = [
   {
     id: 1,
-    title: "Codive - Landing Page",
+    title: "FulgorBurger",
     description:
-      "Landing page corporativa para Codive, una empresa de desarrollo de software a medida, creación de sitios web responsivos y soluciones tecnológicas innovadoras.",
-    image: "/img/Codive.png",
-    technologies: ["Next.js", "React", "TailwindCSS", "JavaScript"],
-    githubUrl: "https://github.com/saebxq0711/Codive.git", // si el repo es este, cámbialo
-    liveUrl: "https://codive-dev.vercel.app", // aquí tu link en vercel
+      "Versión BETA de la plataforma web FulgorBurger, un sistema de pedidos en línea para un restaurante de comida rápida especializado en hamburguesas artesanales. Actualmente permite explorar el menú y realizar pedidos básicos, con futuras implementaciones de sistema de pagos en línea para completar la experiencia del usuario.",
+    image: "/img/FulgorBurger.png",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+    githubUrl: "https://github.com/saebxq0711/fulgorburger.git", // si el repo es este, cámbialo
+    liveUrl: "https://fulgorburger.vercel.app", // aquí tu link en vercel
     year: "2025",
     featured: true,
-    status: "PROD",
+    status: "BETA",
   },
+
   {
-    id: 3,
+    id: 2,
     title: "APIs",
     description:
       "Plataforma web interactiva para explorar personajes de Star Wars a través de una API pública. Permite ver los datos en formato JSON y navegar entre personajes. Desarrollado con React.",
@@ -41,7 +42,33 @@ const projects = [
     status: "PROD",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Codive - Landing Page",
+    description:
+      "Landing page corporativa para Codive, una empresa de desarrollo de software a medida, creación de sitios web responsivos y soluciones tecnológicas innovadoras.",
+    image: "/img/Codive.png",
+    technologies: ["Next.js", "TailwindCSS", "JavaScript"],
+    githubUrl: "https://github.com/saebxq0711/Codive.git", // si el repo es este, cámbialo
+    liveUrl: "https://codive-dev.vercel.app", // aquí tu link en vercel
+    year: "2025",
+    featured: true,
+    status: "PROD",
+  },
+  {
+    id: 3,
+    title: "Dragon Ball",
+    description:
+      "Sitio visual basado en Dragon Ball, desarrollado con React. Incluye una página de inicio, personajes principales y una sección con la historia del anime. Proyecto estático enfocado en diseño y experiencia de usuario.",
+    image: "/img/dragon.png",
+    technologies: ["React.js", "JavaScript", "Bootstrap"],
+    githubUrl: "https://github.com/saebxq0711/dragon_ball.git",
+    liveUrl: "#",
+    year: "2025",
+    featured: false,
+    status: "PROD",
+  },
+  {
+    id: 4,
     title: "Psicocare",
     description:
       "Sistema web para la gestión psicológica. Permite el registro de pacientes, agendamiento de citas, control de sesiones, mensajería privada y chatbot de salud mental.",
@@ -62,19 +89,19 @@ const projects = [
   },
   {
     id: 5,
-    title: "Dragon Ball",
+    title: "Django",
     description:
-      "Sitio visual basado en Dragon Ball, desarrollado con React. Incluye una página de inicio, personajes principales y una sección con la historia del anime. Proyecto estático enfocado en diseño y experiencia de usuario.",
-    image: "/img/dragon.png",
-    technologies: ["React.js", "JavaScript", "Bootstrap"],
-    githubUrl: "https://github.com/saebxq0711/dragon_ball.git",
+      "Sitio web simple creado con Django, con sistema de autenticación incluido (inicio y registro). Ideal como base para futuros desarrollos más complejos con este framework.",
+    image: "/img/django.png",
+    technologies: ["Python", "Django", "Bootstrap"],
+    githubUrl: "https://github.com/saebxq0711/django.git",
     liveUrl: "#",
     year: "2025",
     featured: false,
     status: "PROD",
   },
   {
-    id: 4,
+    id: 6,
     title: "TeamTalks",
     description:
       "Plataforma educativa colaborativa desarrollada en PHP y MySQL. Facilita la interacción entre aprendices e instructores, con módulos de contenido, foros y evaluaciones. Diseño intuitivo y funcional.",
@@ -91,20 +118,6 @@ const projects = [
     year: "2025",
     featured: true,
     status: "BETA",
-  },
-
-  {
-    id: 6,
-    title: "Django",
-    description:
-      "Sitio web simple creado con Django, con sistema de autenticación incluido (inicio y registro). Ideal como base para futuros desarrollos más complejos con este framework.",
-    image: "/img/django.png",
-    technologies: ["Python", "Django", "Bootstrap"],
-    githubUrl: "https://github.com/saebxq0711/django.git",
-    liveUrl: "#",
-    year: "2025",
-    featured: false,
-    status: "PROD",
   },
 ];
 
@@ -213,7 +226,7 @@ const ProjectsSection: React.FC = () => {
             return (
               <div
                 key={project.id}
-                className={`${mdColSpan} ${colSpan} group cursor-pointer ${
+                className={`${mdColSpan} ${colSpan} group ${
                   isVisible
                     ? "opacity-100 translate-y-0 rotate-0"
                     : "opacity-0 translate-y-10 rotate-1"

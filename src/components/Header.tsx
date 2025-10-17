@@ -43,7 +43,6 @@ const Header: React.FC = () => {
     >
       <div className="max-w-8xl mx-auto px-4 md:px-8 py-6 md:py-8">
         <div className="flex items-center justify-between">
-          {/* Logo - Más dinámico */}
           <div className="flex items-center space-x-4 group">
             <div className="relative">
               <Code2 className="w-8 h-8 text-white-primary group-hover:animate-spin transition-all duration-500" />
@@ -58,7 +57,7 @@ const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation - Rediseñado */}
+          {/* Desktop Navigation*/}
           <nav className="hidden lg:flex items-center space-x-16">
             {[
               { name: "INICIO", id: "inicio" },
@@ -78,7 +77,6 @@ const Header: React.FC = () => {
               </button>
             ))}
 
-            {/* CV Button - Más llamativo */}
             <a
               href="/cv/Hoja_de_vida_Juan_Aranda.pdf"
               download
@@ -95,7 +93,6 @@ const Header: React.FC = () => {
               </button>
             </a>
 
-            {/* Social Icons - Flotantes */}
             <div className="flex items-center space-x-6">
               {[
                 { Icon: Github, href: "https://github.com/saebxq0711" },
@@ -122,7 +119,7 @@ const Header: React.FC = () => {
             </div>
           </nav>
 
-          {/* Mobile Menu Button - Animado */}
+          {/* Mobile Menu Button*/}
           <button
             className="lg:hidden text-white-primary hover:text-gray-tertiary transition-all duration-300 hover-lift"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -137,7 +134,7 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Menu - Rediseñado */}
+        {/* Mobile Menu*/}
         {isMenuOpen && (
           <div className="lg:hidden mt-8 pb-8 border-t border-gray-primary/30 animate-fadeInDown">
             <nav className="flex flex-col space-y-6 mt-6">

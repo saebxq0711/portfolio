@@ -14,49 +14,57 @@ const skills = [
   },
   {
     name: "CSS",
-    level: 75,
+    level: 65,
     category: "Frontend",
     icon: "fab fa-css3-alt",
     color: "text-blue-500",
   },
   {
     name: "JavaScript",
-    level: 70,
+    level: 55,
     category: "Frontend",
     icon: "fab fa-js-square",
     color: "text-yellow-400",
   },
   {
+    name: "TypeScript",
+    level: 50,
+    category: "Frontend",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    color: "",
+    isImage: true,
+  },
+  {
     name: "React.js",
-    level: 70,
+    level: 60,
     category: "Frontend",
     icon: "fab fa-react",
     color: "text-cyan-400",
   },
   {
     name: "Tailwind CSS",
-    level: 70,
+    level: 75,
     category: "Frontend",
     icon: "fas fa-wind",
     color: "text-sky-400",
   },
   {
     name: "APIs",
-    level: 75,
+    level: 55,
     category: "Backend",
     icon: "fas fa-plug",
     color: "text-indigo-500",
   },
   {
     name: "PHP",
-    level: 80,
+    level: 75,
     category: "Backend",
     icon: "fab fa-php",
     color: "text-purple-400",
   },
   {
     name: "Python",
-    level: 80,
+    level: 60,
     category: "Backend",
     icon: "fab fa-python",
     color: "text-yellow-300",
@@ -84,14 +92,14 @@ const skills = [
   },
   {
     name: "Bootstrap",
-    level: 90,
+    level: 85,
     category: "Frontend",
     icon: "fab fa-bootstrap",
     color: "text-purple-500",
   },
   {
     name: "VS Code",
-    level: 90,
+    level: 70,
     category: "Tools",
     icon: "fas fa-code",
     color: "text-blue-400",
@@ -208,9 +216,17 @@ const SkillsSection: React.FC = () => {
             >
               <div className="flex items-start justify-between mb-4 md:mb-6">
                 <div className="flex items-center space-x-2 md:space-x-3">
-                  <i
-                    className={`${skill.icon} ${skill.color} text-xl md:text-2xl group-hover:animate-bounce transition-transform duration-300`}
-                  ></i>
+                  {skill.isImage ? (
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="w-6 h-6 md:w-7 md:h-7 group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <i
+                      className={`${skill.icon} ${skill.color} text-xl md:text-2xl group-hover:animate-bounce transition-transform duration-300`}
+                    ></i>
+                  )}
                   <h3 className="text-white-primary font-black text-base sm:text-lg md:text-xl tracking-wide">
                     {skill.name}
                   </h3>
@@ -249,7 +265,15 @@ const SkillsSection: React.FC = () => {
           {[
             {
               title: "FRONTEND",
-              techs: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCSS", "Bootstrap"],
+              techs: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React.js",
+                "TailwindCSS",
+                "Bootstrap",
+              ],
               icon: "fas fa-palette",
               color: "text-blue-400",
               description: "Interfaces modernas",

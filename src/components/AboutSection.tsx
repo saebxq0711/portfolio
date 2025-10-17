@@ -178,7 +178,7 @@ const AboutSection: React.FC = () => {
                 {
                   Icon: Globe,
                   title: "FRONTEND",
-                  desc: "HTML, CSS, JavaScript, React.js, TailwindCSS, Bootstrap",
+                  desc: "HTML, CSS, JavaScript, Typescript, React.js, Next.js, TailwindCSS, Bootstrap",
                   color: "border-white-primary/30",
                 },
                 {
@@ -257,12 +257,7 @@ const AboutSection: React.FC = () => {
                 href="mailto:jsebasaranda2007@hotmail.com"
                 className="inline-block"
               >
-                <button className="group relative border-2 border-white-primary text-white-primary hover:bg-white-primary hover:text-black-primary px-8 py-4 font-bold tracking-widest transition-all duration-500 hover-lift">
-                  <span className="flex items-center">
-                    <Briefcase className="w-5 h-5 mr-3 group-hover:animate-bounce" />
-                    TRABAJEMOS JUNTOS
-                  </span>
-                </button>
+                
               </a>
             </div>
           </div>
