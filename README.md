@@ -1,1 +1,1 @@
-Link to my portfolio: https://jsalportfolio.netlify.app
+Link to my portfolio: https://arandadev.vercel.app
